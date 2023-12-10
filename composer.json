@@ -6,6 +6,8 @@
     "symfony/cache": "^5.4"
   },
   "autoload": {
-    "psr-4": {"SophieCalixto\\DoctrineORM\\": "src/"}
+    "psr-4": {
+      "SophieCalixto\\DoctrineORM\\": "src/"
+    }
   }
 }
