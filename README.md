@@ -13,5 +13,4 @@ php bin/insert-client.php 000.000.000-00 "John Doe"
 ### Windows
 ``` bash
 php ./bin/insert-client.php 000.000.000-00 "John Doe"
-``
-
+```
