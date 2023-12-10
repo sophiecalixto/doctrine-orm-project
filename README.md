@@ -26,3 +26,9 @@ php bin/get-all-client.php
 ``` bash
 php bin/get-client.php 000.000.000-00
 ```
+
+## Update client name
+
+``` bash
+php bin/update-client.php 000.000.000-00 "John Doe new"
+```
