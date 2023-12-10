@@ -10,14 +10,12 @@ use Doctrine\ORM\Mapping\Id;
 #[Entity]
 class Client
 {
-    #[Id, GeneratedValue, Column]
-    private int $id;
     #[Column]
     private string $name;
 
     public function __construct(
-        #[Column]
-        private readonly string $cpf
+        #[Column, Id]
+        private string $cpf
     )
     {
     }
