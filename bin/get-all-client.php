@@ -20,8 +20,8 @@ array_map(function($client) {
         return;
     }
     echo "TELEFONES" . PHP_EOL;
-    array_map(function($phone) {
-        echo $phone->getNumber() . PHP_EOL;
-    }, $client->getPhones()->toArray());
+    $client->getPhones()->map(function($phone){
+        echo $phone->getNumber().PHP_EOL;
+    });
     echo PHP_EOL;
 }, $clients);
