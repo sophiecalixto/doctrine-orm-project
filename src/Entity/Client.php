@@ -15,7 +15,7 @@ class Client
 {
     #[Column]
     private string $name;
-    #[OneToMany(mappedBy: 'client_cpf', targetEntity: Phone::class)]
+    #[OneToMany(mappedBy: 'client_cpf', targetEntity: Phone::class, cascade: ['persist', 'remove'])]
     private Collection $phones;
 
     public function __construct(

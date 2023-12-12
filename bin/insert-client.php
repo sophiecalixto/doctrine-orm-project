@@ -12,9 +12,7 @@ $client = new Client($argv[1]);
 $client->setName($argv[2]);
 if(isset($argv[3])) {
     for($i = 3; $i < count($argv); $i++) {
-        $phone = new Phone($argv[$i]);
-        $client->addPhone($phone);
-        $entityManager->persist($phone);
+        $client->addPhone(new Phone($argv[$i]));
     }
 }
 
