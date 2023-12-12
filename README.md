@@ -9,6 +9,9 @@
 ``` bash
 php bin/insert-client.php 000.000.000-00 "John Doe" 
 ```
+``` bash
+php bin/insert-client.php 000.000.000-00 "John Doe" 999999999
+```
 
 ### Windows
 ``` bash
@@ -31,6 +34,9 @@ php bin/get-client.php 000.000.000-00
 
 ``` bash
 php bin/update-client.php 000.000.000-00 "John Doe new"
+```
+``` bash
+php bin/update-client.php 000.000.000-00 "John Doe new" 999999999
 ```
 
 ## Remove client
